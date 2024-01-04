@@ -1,0 +1,7 @@
+# deploy.yml
+---
+- hosts: localhost
+  tasks:
+    - name: Example task
+      debug:
+        msg: "Hello from Ansible!"
