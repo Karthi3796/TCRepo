@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from Git
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Your build steps go here
+                echo 'Building...'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // Your test steps go here
+                echo 'Testing...'
+            }
+        }
+    }
+}
